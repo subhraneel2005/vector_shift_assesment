@@ -6,7 +6,7 @@ const handlePositions = {
   target: Position.Left,
 };
 
-const BaseNode = ({ id, type, data, inputs = [], outputs = [], children = () => {} }) => {
+const BaseNode = ({ id, type, data, inputs = [], outputs = [], children = () => {}, style = {} }) => {
   const [nodeData, setNodeData] = useState(data);
 
   const handleInputChange = (field, value) => {
